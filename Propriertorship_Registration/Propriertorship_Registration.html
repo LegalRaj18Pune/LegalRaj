@@ -1,0 +1,194 @@
+<div class="backImageInfo">
+  <div class="backImageInfoHeading">Propriertorship Registration</div>
+  <div class="backImageInfoText">Propriertorship is a type of unregistered business 
+    entity that is owned, managed and controlled by one person. Legal Raj offers propriertorship registration from Rs.2899/-</div>
+  <div class="queryCard">
+    <div class="queryYour">Your Info</div>
+    <div class="queryYourInfo">+91-880084045</div>
+    <input type="text" placeholder="Name" class="queryInputs">
+    <input type="email" placeholder="Email" class="queryInputs">
+    <input type="number" placeholder="Mobile No" class="queryInputs">
+    <input type="text" placeholder="City" class="queryInputs">
+    <div class="captcha captcha_style">
+<!--captcha start here -->
+       <div>
+  <!-- captcha image element; the <?php echo md5(...) ?> code throughout is to prevent caching issues -->
+          <img style="float: left; padding-right: 5px" id="captcha_image2" src="securimage_show.php?<?php echo md5(uniqid(time)) ?>" alt="CAPTCHA Image">
+          
+          <!-- invisible div containing captcha audio tag, and optional flash fallback code -->
+          <div id="captcha_image_audio_div2">
+            <!-- the audio tag -->
+            <audio id="captcha_image2_audio" preload="none" style="display: none">
+              <!-- mp3 source tag - uncomment if you have LAME installed -->
+              <!-- <source id="captcha_image2_source_mp3" src="securimage_play.php?id=<?php echo uniqid() ?>&amp;format=mp3" type="audio/mpeg"> -->
+
+              <!-- wav source tag -->
+              <source id="captcha_image2_source_wav" src="securimage_play.php?id=<?php echo uniqid() ?>" type="audio/wav">
+
+              <!-- flash player fallback - delete if you don't want flash fallback -->
+              <object type="application/x-shockwave-flash" data="securimage_play.swf?bgcol=%23ffffff&amp;icon_file=images%2Faudio_icon.png&amp;audio_file=securimage_play.php" height="32" width="32">
+                <param name="movie" value="securimage_play.swf?bgcol=%23ffffff&amp;icon_file=images%2Faudio_icon.png&amp;audio_file=securimage_play.php" />
+              </object>
+            </audio>
+          </div>
+
+          <!-- link to refresh the captcha image and audios -->
+          <a tabindex="-1" style="border: 0 "  title="Refresh Image" onclick="document.getElementById('captcha_image2').src = 'securimage_show.php?' + Math.random();  this.blur(); return false">
+            <img height="32" width="32" src="images\refresh.png" alt="Refresh Image" onclick="this.blur()" style="border: 0px; vertical-align: bottom" />
+          </a>
+          <br>
+
+          <!-- javascript code for refreshing and playing captcha audio -->
+          <script type="text/javascript" src="securimage.js"></script>
+
+          <div style="clear: both"></div>
+        </div>
+     <!-- captcha input -->
+        <label for="captcha_code2">write text from image:</label>
+        <input type="text" name="captcha_code2" id="captcha_code2">
+    <!--captcha ends here -->
+    </div>
+    <div class="getStartedButton">
+      Get Started
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="mainHeading">PROPRIERTORSHIP REGISTRATION</div>
+  <div class="basicConcept">Basic Concept:</div>
+  <div class="basicConceptText">
+    <p>A sole proprietorship is owned, managed and controlled by single person. It is easy
+        to start sole proprietorship. It has minimal regulatory compliance requirements. It is
+        mainly preferred by micro and small businesses that are operating at the initial level.
+        However, it lacks limited liability of proprietor, corporate status, separate legal
+        existence, transferability and perpetuity which are desirable features for medium
+        and large scale businesses.</p>
+    <p>It is necessary to intimate the facilitator or obtain License under Maharashtra Shops
+        and Establishments Act, 1948 (for Maharashtra) or obtain license applicable as per
+        state law. Further tax and other business registrations can be obtained once the
+        proprietor’s business comes within the criteria prescribed under the different
+        statutes. For instance, GST Registration can be obtained in the name of the
+        Proprietor. All the registrations for a proprietorship would be in the name of the
+        Proprietor, making the Proprietor personally liable for all the liabilities of the
+        Proprietorship.</p>
+    <p>The average time taken to complete a proprietorship registration is 3 to 5 working
+        days, subject to government processing time and client document submission.</p>
+  </div>
+</div>
+
+<!-- Advantages of Propreitorship Panel Start-->
+<div class="container" ng-controller="Propriertorship_RegistrationCtrl">
+  <div class="row" >
+    <p class="propReason">Advantages of Proprietorship Firm:</p>
+    <div class="panel panel-default" ng-repeat="data in panelData">
+      <div class="panel-heading" ng-model="isCollapsed" ng-click="isCollapsed=!isCollapsed">
+        <h3 class="panel-title"><a >{{data.heading}}<span ng-class="isCollapsed?'glyphicon glyphicon-minus panelHead':'glyphicon glyphicon-plus panelHead'"></span></a></h3>
+      </div>
+      <div ng-show="isCollapsed">
+        <div class="panel-body">
+          {{data.content}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Reason Reasons to Register a Propreitorship Panel end-->
+
+ <!-- Pricing Details start -->
+      
+ <div class="container">
+  <div class="row  text-center price">
+    <span> SIMPLE &amp  TRANSPARENT PRICING </span>
+
+  </div>
+
+
+
+
+  <div class="row cardview">
+    <div class="col-md-4 col-sm-12 col-xs-12 card1">
+    
+      <div class="block cardPrice top">
+          <h4 class="block-title">SILVER</h4>
+          <div class="priceDetail">
+            <sup>Rs.</sup>2899/-
+            <p>all inclusive fees</p>
+        </div>
+      </div>    
+      
+      <div class="cardPrice-footer top-bottom">
+        <ul>
+       <p> Proprietorship registration with TAN registration,MSME under 
+        Udyog Aadhaar and iCFO compliance tracking.Inclusive of government
+        fee and GST </p>
+        </ul>
+        <div class="block-button">
+          <a class="btn btn-secondary btn-lg checkout">CHECKOUT</a>
+        </div>
+      </div>
+      
+    </div>
+
+ 
+
+    <div class=" col-md-4 col-sm-12 col-xs-12 card2">
+ 
+        <div class="block cardPrice">
+            <h4 class="block-title">GOLD</h4>
+            <div class="exclusive">
+            <sup>Rs.</sup>7899/-
+            <p>all inclusive fees</p>
+          </div>
+          
+        </div>
+       
+        <div class="cardPrice-footer bottom">
+            <ul>
+           <p> Proprietorship registration with TAN registration,MSME under Udyog 
+             Aadhaar,service tax registration and iCFO compliance tracking.Inclusive of government
+            fee and GST </p>
+          </ul>
+          <div class="block-button">
+          <a class="btn btn-secondary btn-lg checkout">CHECKOUT</a>
+          </div>
+          </div>
+  </div>
+  <div class="col-md-4 col-sm-12 col-xs-12 card1">
+      
+          <div class="block cardPrice top">
+              <h4 class="block-title">PLATINUM</h4>
+              <div class="priceDetail">
+              <sup>Rs.</sup>13899/-
+              <p>all inclusive fees</p>
+            </div>
+          
+          </div>
+          <div class="cardPrice-footer top-bottom">
+              <ul>
+             <p> Proprietorship registration with TAN registration,MSME under 
+              Udyog Aadhaar and trademark filling.Inclusive of government
+              fee and GST </p>
+            </ul>
+            <div class="block-button-last">
+              <a class="btn btn-secondary btn-lg checkout">CHECKOUT</a>
+              </div>
+            </div>
+      
+    </div>
+
+    </div>
+  </div>
+
+</div>
+<!-- Pricing Details end -->
+
+<!-- FAQ Section start -->
+<div class="faq">
+  <div class="container">
+    <div class="textFaq">Frequently Asked Questions (FAQs)<a class="btn btn-secondary btn-lg faqBtn">CLICK HERE!</a></div>
+  </div>
+</div>
+
+  <!-- FAQ Section end -->
+
